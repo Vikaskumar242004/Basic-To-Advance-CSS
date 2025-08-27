@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .box {
+            border: 2px solid black;
+            height: 30vh;
+            width: 80vw;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        .box1 {
+            background-color: blue;
+
+            /* postion absolute means that box ki position fix ho jaygi */
+            /* position: absolute; */
+
+            /* position sticky means that box ki position fix jo jaygi or scroll karne pr wo top pr rhagi or 
+            neeche ka text ye jo bhi material hoga wo uske neeche se scroll hota rhega or sticky wala part
+            sabse uper aake ruk jayga or agar position fixed de rakhi he to wo upar se neeche ki tarag nahi 
+            aayga pr scroll karne pr neeche ka text uske niche se scroll ho jayga */
+            position: sticky;
+            top: 0px;
+            /* height: 111px;
+           width: 100%; */
+
+           /* jisko z index diya he uske index jyada hone ki wajah se wo kisi dusre box ke upar show hoga */
+            z-index: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box2 {
+            background-color: aqua;
+
+            /* position relative means that agar uska kuch parent ko relative de rakha he to uske according khid ko
+            set kr lega agar uska kisi parent ko position relative nahi de rakha he to wo div ke pass jayga agar
+            us pr bhi  nahi he to body pr jayga or agar us pr bhi position nahi he to fir wo apne aap ko html 
+            ke according set kr lega*/
+            position: relative;
+            top: 34px;
+            left: 56px;
+        }
+
+        .box3 {
+            background-color: blueviolet;
+
+            /* postion fixed karne se box ya text apni jagah pr fix ho  jayga or scroll karne pr upar neeche nahi 
+            hoga fix rhega */
+            /* position: fixed;
+            bottom: 0px;
+            left: 8vw;
+            height: 111px; */
+        }
+
+        .box4 {
+            background-color: brown;
+
+        }
+
+
+        .parent {
+            padding: 43px;
+            margin: 34px;
+            border: 6px solid black;
+            position: absolute;
+
+            /* position relative */
+
+            /* some points about position relative  */
+            /* Exception : transform, filter , or perspective properties can also make an element appear as
+            positioned*/
+   
+            /* agar ye teeno position relative ki jagah diye hue he to bhi postion inke base pr set hogi na ki
+            html ya body ya div kyuki ye parent ki tarah hi hote he */
+            
+            /*  transform : translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> </div>
+        <div class="box box2"> </div>
+        <div class="box box3"> </div>
+        <div class="box box4"> </div>
+    </div>
+
+
+</body>
+
+</html>

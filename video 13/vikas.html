@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model pr Css overflow</title>
+
+    <style>
+        .box {
+            /* the 4 extra lines are given below outside from this topic to style my code  */
+            box-shadow: 5px 10px 2px sandybrown;
+            text-shadow: 10px 5px 2px yellowgreen;
+            color: rebeccapurple;
+            background-color: aquamarine;
+
+
+            width: 20vw;
+            height: 20vh;
+            border: 2px solid black;
+
+            /* overflow x me hidden isliye use kiya jisse seedha scroll bar  aaye*/
+            overflow-x: scroll;
+
+            /* overflow y me hidden is liye dala kyuki lete hue scroll bar na aaye */
+            overflow-y: hidden;
+
+            /* this is the short hand method to write overflow x and y int terms of overflow : x y ; */
+            overflow: scroll hidden;
+
+            /* overflow auto karne se jha pr jrurt hogi waha pr scroll bar apne aap de dega  or jaha jarurat nahi
+            hoi waha par nahi dega */
+            overflow: auto;
+
+            /* white space nowrap tag use karne se sara text ek straight line me hi aayga or text ko neeche nahi
+            girne dega */
+            white-space: nowrap;
+
+            /* text overflow ellipsis tag use karne se overflow text ke samne 3 dotes (...) de dega  */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ad nulla repellendus dolores quaerat alias
+        maiores earum culpa deserunt doloribus hic inventore quisquam excepturi nisi suscipit similique incidunt
+        exercitationem unde, architecto commodi ducimus obcaecati tempore dolorem. Dignissimos, est officia enim
+        suscipit repudiandae dolor consequatur laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Magni facere dolorum adipisci? Amet ab error blanditiis ipsa molestias sit dolore hic? Magni, ad, fugiat
+        inventore laborum possimus facilis asperiores quas eligendi recusandae nostrum consequuntur. Pariatur dolorem
+        explicabo reiciendis molestiae assumenda. Consectetur tenetur voluptate natus quae?
+
+    </div>
+</body>
+
+</html>

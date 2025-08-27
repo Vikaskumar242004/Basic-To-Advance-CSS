@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+
+    <!-- is video me hm website ko responsive bnana sikhenge  -->
+    <style>
+        body {
+            background-color: violet;
+        }
+
+        /* media screen isliye use karte he taki  hmari site responsive ho */
+        /* yha  pr orientation portrait kr rakhi he isse hoga ye ki agar hmari screen agar portrait ho jati he to 
+        ek border aa jayga just for responsive example */
+        @media screen and (orientation: portrait) {
+            body {
+                border: 4px solid black;
+            }
+        }
+
+        /* media only screen only responsive bnane ke  liye karte he */
+        /* yaha pr  max width  de rakhi he agar hmari site ki width 455px se km ho  jati he to  background color
+        change ho jayga jo bhi media me diya hoga or humne box ko bhi flex krke column kr rakha he to agar 
+        width km hoti he to boxes bhi  apna size km krenge or responsive ho jaynge */
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class=" box"></div>
+        <div class=" box"></div>
+        <div class=" box"></div>
+    </div>
+</body>
+
+</html>

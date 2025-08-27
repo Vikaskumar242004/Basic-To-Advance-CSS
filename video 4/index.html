@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <Style>
+        /* Element Selector */
+
+        /* div{
+            background-color: violet;
+         } */
+
+        /* Class Selector */
+
+        .violet {
+            /* div ko class deke css me define krke kisi particular class ka colour change kr sakte he */
+            background-color: violet;
+        }
+
+        /* I'D Selectors */
+        #green {
+            /* div  ko id deke use css me define krke kisi particular id ka colour change kr sakte he  */
+            background-color: lightgreen;
+        }
+
+        /* Child Selectors */
+
+        div>p {
+            /* div ki  child ka color or background colour chnage krne ke liye pr element only paragraph hona chaiye */
+            color: lightblue;
+            background-color: blanchedalmond;
+        }
+
+        /* Descendent Selectors */
+        div p {
+            /* kisi div ke child ka color or background colour change krne ke liye or kis bhi element me ho bs paragraph hona chaiye*/
+            color: blue;
+            background-color: lightcoral;
+        }
+
+        /* Universal Selectors */
+        * {
+            /*  words ka space fit karne ke liye use hota he */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Psuedo Selectors */
+        a:visited {
+            /*  visited link ka colour change ho jayga */
+            color: rgb(27, 27, 217);
+        }
+
+        a:link {
+            /* link color rhega jb tak visit na kari ho */
+            color: rgb(255, 0, 0);
+        }
+
+        a:active {
+           /* link pr click krne se uska  background colour show hoga jo diya he  */
+            background-color: aqua;
+         }
+
+         a:hover{
+            /* link pr arrow le jane se uska background color change ho jayga */
+            background-color: lightskyblue;
+         }
+    </Style>
+</head>
+
+<body>
+    <div class="violet">
+        i am a div.
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </div>
+    <div id="green">
+        I am a another div.
+    </div>
+    <div>
+        <a href="https://www.google.com">Go To Google</a>
+        <a href="https://www.facebook.com">Go To FaceBook</a>
+    </div>
+</body>
+
+</html>

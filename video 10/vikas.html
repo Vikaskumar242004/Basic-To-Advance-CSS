@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+
+    <style>
+        /* universal attribute jisse margin or padding center ho gaye */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            color: blue;
+            border: solid black;
+
+            /* display inline block tag is used to take inline the content and they behave like the box */
+            display: inline-block;
+            width: 200px;
+            padding: 45px;
+        }
+
+        .box1 {
+
+            /* display none is used to remove the text  */
+            /* display: none; */
+
+            /* visibilty hidden is used to remove the text but its space will stay */
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        i am a boy.
+    </div>
+    <div class="box">
+        you are a girl.
+    </div>
+    <span>
+        and you are a gay.
+    </span>
+</body>
+
+</html>

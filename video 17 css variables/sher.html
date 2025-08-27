@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global Variable most important tag used in web designing */
+        /* :root tag me hum varible declare karte he jisse ki hum jo value apne variable ko dete he wo pure code
+        me run hoti he jisee hum bs varible me change krke pure code me change kr sakte he */
+        :root {
+            --color: rgb(240, 111, 227);
+            --seccolor: rgb(237, 43, 179);
+            --defpad: 23px;
+            --defop: 0.5;
+        }
+
+        ul {
+
+            /* display flex ki  help se hum text ko ya or kisi bhi chiz ko horizontally la sakte he */
+            display: flex;
+        }
+
+        ul li {
+
+            /*  opacity tag se hum text ko kam ya jyada shoe kr sakte he */
+            opacity: var(defop);
+
+            /* list style none tag se hum list me jo dots aa rahe the unko remove kr sakte he */
+            list-style: none;
+
+            /* yha pr humbe global variable ka use kiya he jisse hum bs globla  me value deke kahi bhi change kr 
+            sakte he */
+            padding: var(--defpad);
+            border: 3px solid black;
+        }
+
+        ul li:first-child {
+
+            /* local variable */
+            /* local variable means that kisi particular element ka color change kr sakte he ya kuch or bhi set kr
+            sakte he jese padding margin and etc */
+            --color: rgb(237, 101, 43);
+
+            /* yha pr blue isliye diya he ki agar hume --color wala  variable na mile to uski jagah blue chal jaye */
+            background-color: var(--color, blue);
+        }
+
+        .nav {
+            /* background-color: greenyellow; */
+
+            /* global variable */
+            background-color: var(--color);
+        }
+
+        .container {
+            /* background-color: lightgreen; */
+
+            /* global variable */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis nemo ex magni architecto explicabo
+        rerum laudantium eligendi id perspiciatis! Sit, hic! Sit nobis illum molestias quibusdam culpa, in facilis
+        laboriosam natus laudantium cum qui similique, molestiae dolores. Eveniet possimus laudantium reiciendis tempora
+        magnam fuga?
+    </div>
+</body>
+
+</html>

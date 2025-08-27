@@ -1,0 +1,53 @@
+<!-- Priority to using specification of tags -->
+<!-- Inlint style > ID Selector > Class or Attribute Selector> ELement Selector > Universal Selector  -->
+<!-- jis class ke aage !important likh diya to uska colour hi print hoga -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        .h1 {
+            color: aqua;
+        }
+
+        /* the specificity of this selector is 10 */
+        h1.cred {  
+            /*  suppose if we add h1 into cred then the specificity of h1.cred is 11 because 
+            h1 have 1 and cred also have 10 so 1 +10 == 11 */
+            color: red;
+        }
+
+        /* the specificity of this selector is 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* the specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* this is an example of attribute selector.the specificity of this selector is 10 */
+        [divx=a] {
+            color: rgb(175, 227, 241);
+        }
+
+        /* what is the specificity of this which are given below */
+
+        a.harryclass.rohan-class[href]:hover{
+            color: violet;
+         }
+         /* the answer is (1 + 10 + 10 + 10 + 10) == 41 */
+    </style>
+</head>
+
+<body>
+
+    <h1 class="cred cyellow cpurple" divx="a">CSS Specificity</h1>
+</body>
+
+</html>

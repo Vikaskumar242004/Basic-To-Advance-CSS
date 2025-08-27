@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+
+    <style>
+        nav ul li {
+            padding: 23px;
+
+            /* display flex karne se box horizontally aa jate he */
+            display: flex;
+
+            /* list style tag se hm jo wo dotes bane hote he unhe change kr sakte he jese mene lower roman kr rakhe he */
+            list-style: lower-roman;
+
+            /* list style tag se hm dotes ko hi badal sakte he or emojies lga sakte he pr muzh pr lge nahi abhi */
+            /* list-style-type: ""; */
+            background-color: rgb(240, 135, 135);
+
+            /* list style position se hm jo dotes he wo bhar hote he text se to hum iski help se unhe text ke andar
+            le sakte he */
+            list-style-position: inside;
+            border: 2px solid black;
+
+            /* list style wo upar wala he matlab he pr yaha pr hum disc inside url karke isme image ki link  daal
+            sakte he pr mere pass immage nahi thi to mene abhi khaki choda he */
+            /* list-style: disc inside url("jo bhi url hoga"); */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+
+        </ul>
+    </nav>
+</body>
+
+</html>

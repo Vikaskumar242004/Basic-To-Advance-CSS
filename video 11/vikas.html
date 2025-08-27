@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+
+    <style>
+        div {
+            color: red;
+            border: 2px solid black;
+            padding: 0;
+
+    /* box shadow means that jo box  he uski shadow aa jaygi pr ye 5px 15px or 5px ka matlab he x , y or blur */
+            box-shadow: 5px 15px 5px greenyellow;
+        }
+
+        .text-element {
+     /*text shadow is used to give the shadow to the text and 2px , 2px or 4px means that x, y or blur  */
+            text-shadow: 2px 2px 4px rgb(236, 95, 227);
+
+            /*outline tag is used to show the outline on the text  */
+            outline: 2px solid green;
+
+            /* border is used to give the border on the text */
+
+            /* and the basic difference in b/w outline and border is that outline doesn't take the space and border
+            take the space and we can curve the border and outline doesn't */
+            border: 2px solid black;
+
+            /* outline offset means that we can increase and decrease the outline of the text */
+            outline-offset:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        i am a vikas
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, necessitatibus ratione, illum pariatur quia
+        aperiam vel nulla accusamus reprehenderit iusto deleniti animi obcaecati consectetur. Obcaecati?
+    </p>
+</body>
+
+</html>
