@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+
+    <style>
+        /* box:first-chld means that div me jo class de rakhi he uska first child  jo  bhi ho usme change krna he */
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+
+        /* box:: first-line means that box ki jo first line he usme change ho  */
+        /* .box::first-line {
+            color: yellow;
+        } */
+
+
+        /* boxes me universal tag lga diya taki sare boxes ka color same ho jaye */
+
+        /* .boxes * { 
+            color: blue;
+            border: 2px solid black;
+        }
+ */
+
+        /* yha pr box ko paragraph ko data-color primary de diya he jo ki ek class he jisee kha pr bhi hm ye de denge to kahhi  pr bhi changee ho jayga */
+        /* p, 
+        a,
+        .box,
+        [data-color="primary"] {
+            padding: 45px;
+        } */
+
+        /* box:nth-lase-child me 2 de rakha he jisse box class ke dusre number pr jo bhi  hoga uska background
+        color change ho jayga*/
+        /* 
+        .box:nth-last-child(2){
+               background-color: rgb(108, 207, 249);
+        }
+         */
+
+        /* boxes::before means that html me type na krke direct css me type krdo before mtlb jo bhi text html
+         me diya hoga uske sabse upar ye hoga */
+        .boxes::before {
+            content: "vikharo is a company  in 2034";
+            color: purple;
+        }
+
+        /* same yahi bs after se text sabse neeche hoga */
+        .boxes::after {
+            content: "vikaharo is a gandfaad company";
+            color: bisque;
+        }
+
+        /* selection tag means that jo bhi  text hm select krenge uska background color or color jo bhi hmne de rakha hoga wo change ho jayga */
+        ::selection {
+            background-color: black;
+            color: red;
+        }
+
+        /* box::first-letter tag se hmare jitne bhi box he unka first letter ka color change ho jayga ya first letter me kuch bhi change 
+        kr sakte he */
+        .box::first-letter {
+            color: rgb(245, 57, 10);
+            font-size: 40px;
+        }
+
+        /* input::placeholder means that humne ek placeholder diya hua he jisse usme hm kuch bhi change kr sakte he */
+        input::placeholder {
+            margin: 10px;
+            padding: 5px;
+            color: aquamarine;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am first box Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium error dignissimos et harum illo. Ad architecto ipsam, in reiciendis obcaecati dignissimos
+            ducimus quod culpa possimus asperiores laborum debitis ullam neque eum vero! Laboriosam laudantium dolore
+            quisquam similique corrupti rerum, eos, ipsam temporibus possimus, maxime amet!</div>
+        <div class="box">hey i am a box</div>
+        <div class="box">hey i am a box</div>
+
+        <input type="text" placeholder="type your text">
+    </div>
+</body>
+
+</html>

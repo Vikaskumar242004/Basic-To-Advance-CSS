@@ -1,0 +1,75 @@
+<!-- ye video me jo bhi btaya gaya he wo san bilkul bekar he purani video me iska use hota the jo ki ab nahi hota
+ he -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+
+    <style>
+        .cards {
+            border: 2px solid black;
+
+            /* display flow root means that koi text image pr ya kahi or override kr raha he to nahi krega or
+            uske according  set ho jayga */
+            display: flow-root;
+        }
+
+        img {
+
+            /* image right side me aa jaygi agar left likh dete to left side me aa jati */
+            float: right;
+        }
+
+        .card1 {
+            border: 2px solid red;
+        }
+
+        .card2 {
+            border: 2px solid red;
+            background-color: aqua;
+           
+            /* clear right tag se jis bhi tag me humne diya jese ki humne yaha pe card 2 me diya he to card to 
+            ke right side me kuch bhi nahi aayga or uska text hi hoga image ki sath override nahi hoga */
+            clear: right;
+        }
+
+        .card3 {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="zm4nfgq29yi91-1536x1536-1.jpg" width=" 230px">
+        <div class="card1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, facilis rem inventore
+            ex recusandae adipisci similique tenetur corrupti sunt! Sequi obcaecati odio ipsa. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Ullam, dolore minima. Voluptatem voluptate saepe voluptatum,
+            sequi officia sint. Recusandae hic aut maxime nostrum nam unde quidem vel itaque est laboru</div>
+        <div class="card2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, unde dolor expedita ex
+            similique perspiciatis ea itaque id maxime provident inventore ipsum doloribus voluptatibus adipisci
+            corporis cupiditate et maiores architecto laboriosam eius! Asperiores facilis quibusdam rem, sapiente esse
+            nobis incidunt perspiciatis sed alias. Reprehenderit assumenda eius enim debitis eligendi, incidunt saepe ex
+            porro amet deserunt velit quo, fugiat laborum unde ea nulla officiis optio possimus pariatur. Quos vero
+            corporis sunt nam quas unde voluptatum quam saepe ullam blanditiis. Eaque magni temporibus, sunt quisquam
+            aspernatur laboriosam atque itaque minima numquam reprehenderit incidunt saepe blanditiis tempore nobis
+            quod, excepturi provident sit eveniet. Corrupti, nobis. Vel, exercitationem natus reiciendis cumque tenetur
+            perferendis! Aperiam voluptate eum debitis fugiat iusto! Debitis consequuntur veniam similique aspernatur
+            consectetur suscipit eius animi rerum, nam repellat at ea saepe quis odit nihil maiores? Cupiditate voluptas
+            itaque placeat dolore sequi, delectus, ipsam, illum molestiae esse praesentium incidunt eaque officia? Animi
+            tempore ratione deserunt laudantium eligendi asperiores quae quisquam libero qui quos architecto repudiandae
+            deleniti est id accusantium, corporis veniam vero, earum itaque sunt quaerat rerum eius, necessitatibus
+            veritatis. At, eligendi optio. Perspiciatis exercitationem nam saepe rem nostrum ad eos molestias voluptas,
+            voluptatem temporibus error molestiae deserunt hic animi non aliquam tempora consectetur assumenda atque.
+            Ducimus cumque molestias iste quaerat consequuntur fugiat! Nemo, voluptatibus! Fuga quis odit, quam
+            perspiciatis obcaecati maxime, enim vero eaque voluptatibus libero vitae ab neque magni quisquam.</div>
+        <div class="card3"></div>
+    </div>
+</body>
+
+</html>
