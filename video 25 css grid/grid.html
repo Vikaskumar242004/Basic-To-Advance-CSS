@@ -1,0 +1,68 @@
+<!-- css grids use to make the  layout  -->
+ <!-- grid me hum define kr sakte ki kitni rows ho or kitni column ho -->
+  <!-- grid line
+   grid line kisi grid ke andar ho line hoti he wo grid line hoti he -->
+
+   <!-- grid space
+    grid ke andar ka ek box ka space hi grid space hota he -->
+
+    <!-- grid track
+    the space between two or more grid boxes is known as grid track  -->
+
+    <!-- grid area
+     grid ke andar kuch bhi area between two or more boxes -->
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:2px solid black;
+            display: grid;
+
+            /* grid template columns tag se  hum define kr sakte he ki hume kitni or kis size ki column chaiye */
+            grid-template-columns: [first]120px [dusra]100px [t];
+
+            /* grid ki height set karne ke liye grid template rows use  karte he  */
+            grid-template-rows: 100px 100px 100px;
+        }
+
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            /* width: 55px; */
+        }
+
+        .item4{
+            
+        /* grid row me 1/2 ka matlab he ki hmare ye element row no.1 se row no.2 tk jayga  */
+            grid-row: 1/2;
+
+        /* grid column me 1/2 ka matlab he ki hmare ye element column no.1 se column no.2 tk jayga  */
+            /* grid-column: 1/2; */
+        /* yha pr second line ka name humne dusra rakha he or third line ka name t rakha he jisse 4th number ka box 2nd line se 3rd line tk jayga */
+            /* grid-column: dusra/t; */
+        /*yha pr ye first line se 3rd line tk jayga or puri space le lega   */
+            grid-column: first/t;
+        }
+/* and due to the same  condition in item4 and itme1 the box will be overlape */
+        /*  */
+        .item1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

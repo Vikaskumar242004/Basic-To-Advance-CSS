@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transforms</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 80vh;
+            width: 80vw;
+        }
+
+        .item{
+            border: 2px solid purple;
+            background-color: aquamarine;
+            height: 55px;
+            width: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            /* transform ko rotate karne se wo container ke hisab se rotate ho jayga */
+            /* transform: rotate(0.25); */
+
+            /* x axis ke according rotate ho jayga */
+            /* transform: rotateX(5deg); */
+
+            /* y  axis ke according rotate ho  jayga */
+            /* transform: rotateY(5deg); */
+
+            /* transform me scale dene se container se overlap krega jitna size diya hoga  */
+            /* transform: scale(1.5); */
+
+            /* transform me skew dene se box stretch ho jayga */
+            /* transform: skew(5deg);
+
+            /* transform me translate karne se container ke according kuch space le lega */
+            /* transform: translate(34px); */
+
+            /* x axis ke according space lega */
+            /* transform: translateX(34px); */
+
+            /* y axis ke according space lega */
+            /* transform: translateY(34px);  */
+/* transform me y axis ke according 100% or fir use skew ki help se stretch kr diya or fir x axis ke  according 45% translate kr diya  */
+            /* transform: translateY(100%) skew(34deg) translateX(45%); */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">box</div>
+    </div>
+</body>
+</html>
