@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            height: 50vh;
+            width: 80vw;
+            background-color: aqua;
+            position: relative;
+        }
+
+        .box {
+
+            height: 55px;
+            width: 55px;
+            bottom: 0;
+            left: 0;
+            border-radius: 80px;
+            position: absolute;
+            background-color: blueviolet;
+            animation: vikasX 3s linear infinite , vikasY 1s ease-out infinite alternate ;
+        }
+
+        @keyframes vikasX{
+            from{
+              left: 0;
+            }
+            to{
+              left: 100%;
+            }
+        }
+
+
+        @keyframes vikasY{
+            from{
+        bottom: 0;
+            }
+            to{
+bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

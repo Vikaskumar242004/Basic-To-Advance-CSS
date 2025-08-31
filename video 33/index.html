@@ -1,0 +1,94 @@
+<!-- animation or transition dono me se konsa use kare
+ agar simple property ke liye use karna he  to transition use karo
+ or agar complex animations bnane jo repeat ho rahe ho alag alag elements ke liye-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+
+    <style>
+        .container {
+            background-color: aqua;
+            height: 80vh;
+            width: 30vw;
+
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            animation-name: vikaskianimation;
+
+            animation-duration: 1s;
+
+            /* animation iteration count tag use to how many times our animations can run */
+            animation-iteration-count: infinite;
+
+            /* animation fast or slow karne ka tarika ease in wala */
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+            /* website pr visit karne ke kitni der baad animation chalegi */
+            /* animation-delay: 1s; */
+
+            /* animatio  kis direction me hoga */
+            animation-direction: alternate-reverse;
+
+            /* animation play state me agar paused de diya to animation jha  pr hogi wahi pr pause ho jaygi */
+            /* animation-play-state: paused ; */
+
+            /*in sab ko alag alag na likhke ek hi property ka use kare animation ke aage hi sab likhde  */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            /* ye dusri animation he*/
+            animation: vikas2 3s ease-in-out 1;
+        }
+
+        @keyframes vikaskianimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+
+                /* x axis ke along kitne dur jaygi */
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes vikas2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

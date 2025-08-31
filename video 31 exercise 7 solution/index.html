@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .logo {
+            height: 34px;
+            width: 34px;
+            background-color: aquamarine;
+        }
+ 
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .right ul {
+            gap: 10px;
+            display: flex;
+        }
+
+        .right ul li {
+            list-style: none;
+        }
+
+
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+            margin: 70px;
+            font-family: sans-serif;
+        }
+
+        .first span {
+            font-size: 40px;
+
+        }
+
+        .first p {
+            font-size: 15px;
+            width: 40vw;
+            text-align: center;
+        }
+
+        .btn{
+            background-color: rgb(142, 141, 245);
+            padding: 14px 16px;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-weight: 700;
+        }
+
+        /* .second {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: 80px 80px 80px;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+            gap: 190px;
+        } */
+
+        p {
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tata {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            background-color: rgb(33, 65, 65);
+        }
+
+        .Download {
+            font-size: 23px;
+        }
+
+        .grid{
+           display: grid;
+           height: 12px;
+           width: 20px;
+        }
+
+        .blue{
+            background-color: rgb(39, 183, 183);
+        }
+
+        .green{
+            background-color: rgb(109, 241, 109);
+        }
+
+        .item{
+            display: flex;
+            padding: 23px;
+            background: rgb(181, 166, 166);
+            border-radius: 12px;
+            gap: 8px;
+        }
+
+        .item-lang{
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Products</li>
+                    <li>About us</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <section class="first">
+            <span> Download <b>UltraEdit</b> For Windows</span>
+            <div>
+                <p>Download and Try UltraEdit Before You Buy It! This Download Includes the Full Windows Version Of The
+                    Text Editor.</p>
+            </div>
+
+            <div>
+                <button class = "btn">
+                    DOWNLOAD MAC OR LINUX VERSION
+                </button>
+            </div>
+        </section>
+
+        <section class="tata">
+            <div class="Download">
+                <span>Download UltraEdit</span>
+                <span class="small">UltraEdit CopyRight @pvt Ltd.</span>
+            </div>
+        </section>
+<div class = "grid">
+    <div class="item">
+            <div class="item-lang">English</div>
+        <button class = "btn blue">Download 32-bit</button>
+        <button class = "btn green">Download 62-bit</button>
+
+        <!-- <div class="item-lang">Spanish</div>
+        <button class = "btn blue">Download 32-bit</button>
+        <button class = "btn green">Download 62-bit</button>
+
+
+        <div class="item-lang">Chinese</div>
+        <button class = "btn blue">Download 32-bit</button>
+        <button class = "btn green">Download 62-bit</button>
+    
+      
+        <div class="item-lang">British</div>
+        <button class = "btn blue">Download 32-bit</button>
+        <button class = "btn green">Download 62-bit</button> -->
+        </div>  
+    </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

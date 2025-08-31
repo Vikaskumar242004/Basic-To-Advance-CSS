@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transitions</title>
+    <style>
+        .container {
+            background-color: aqua;
+            height: 40vh;
+            width: 50vw;
+        }
+
+        .box {
+
+            background-color: red;
+            height: 4vh;
+            width: 5vw;
+
+            /* transition property means that isme hum ek sath hi sari property lga sakte he transition ki or ek ek karke bhi or all ka use 
+            karke bhi */
+            /* transition-property: background-color, transform; */
+
+            /* transition duration means that how much time to take a transition */
+            /* transition-duration: 3s; */
+
+            /* transition  timing functioon means that humari slide kese move karegi phle fast fir slow ya phle slow ya fir fast or uske liye 
+               bhot sare function he jo  acha lge use kr lo */
+            /* transition-timing-function: ease-in-out; */
+
+            /* transition delay is used to how much later a transition is show on the webpage. */
+            /* transition-delay: 1s; */
+
+            /* ye upar 4 baar alag alag use na karke ek hi baar use kr sakte he. */
+            transition: all 3s ease-in-out 1s ;
+        }
+
+        .translate {
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+
+</html>
